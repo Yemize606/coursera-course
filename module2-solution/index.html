@@ -2,26 +2,75 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Anatomy of a css rule</title>
+	<title>Fatcs About Food</title>
 	<style>
-		p{
-			color : black;
-			font-style : 20px;
-			background :purple;
-			font-family : joker;
+		*{
+			box-sizing :broder-box;
 		}
-	h1{ color : green;
-	 font-size : 36px;
-	 text-align : center;
-	 background :grey;
-	}
-	</style>	
+		h1{margin-bottom:15px;
+			text-align:center;}
+		section{border:1px solid black;
+			background-color:grey;
+			width:90%;
+			height:150px;
+			margin-right:auto;
+			font-family:Helvetica;
+			color:white;}
+			.row{width:100%;
+				margin-color:black;}
+			#well{background-color:pink;
+				width:50%;
+				position:relative;
+				top:-20px; left:155px;
+			}
+			#fish{background-color:pink;
+				width:50%;
+				position:relative;
+				top:-20px; left:155px;}
+			#goat{background-color:pink;
+				width:50%;
+				position:relative;
+				top:-20px; left:155px;}
+			/*********large devices olny*********/
+			@media(min-width:992px){
+				.col-lg-1, .col-lg-2, .col-lg-3 {float :left;
+					border:1px solid white;}
+					.col-lg-1{width:8.33%;}
+					.col-lg-2{width:16.33%;}
+					.col-lg-3{width:25%;}
+			}
+			/***********medium devics only********/
+			@media(min-width:768px) , (max-width:991px) {
+				.col-md-1, .col-md-2, .col-md-3 {float :left;
+					border:1px solid white;}
+					.col-md-1{width:8.33%;}
+					.col-md-2{width:16.66%;}
+					.col-md-3{width:25%;}
+			}
+			/***********small devices only***********/
+			@media(max-width:767px) { .row{width:100%;}
+			#well{background-color:pink;
+				width:50%;
+				position:relative;
+				top:-20px; left:155px;
+			}
+			#fish{background-color:pink;
+				width:50%;
+				position:relative;
+				top:-20px; left:155px;}
+			#goat{background-color:pink;
+				width:50%;
+				position:relative;
+				top:-20px; left:155px;} }
+		</style>
 </head>
 <body>
-	<h1> Anatomy Of A Css Rule</h1>
-	<h2> Subheading 1 </h2>
-	<p> Css is used to style a web page after the structure which is the html has been contrusted well waku&nbsp;and&nbsp;waku right</p>
-	<h3> What yemi understands and quots </h3>
-	<p> &quot;yemi is a man of honour and what u don't want people to do you do not do unto others thats all </p>
+	<h1>Foods We Are Common With</h1>
+	<div class="row">
+		<div class="col-lg-3 col-md-6"><section><h2 id="well">Chicken</h2>Chicken is the most common type of poultry in the wrold owning relative ease and low coast of rasing and an alternative to red meat.</section></div>
+		<div class="col-lg-3 col-md-6"><section><h2 id="fish">Fish</h2>Many fishes are caught and consumed by humans around the world fish is and important source of protein</section></div>
+		<div class="col-lg-3 col-md-6"><section><h2 id="goat">Goat milk</h2> This is one of the most commonly consumed types of dairy in the world it is a source of protein and fats </section></div>
+	</div>
+
 	</body>
 </html>
